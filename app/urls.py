@@ -17,13 +17,16 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     ### Criar URL para o app genres
     
+    
     ### Criar URL para listar e criar generos
     path('genres/', GenreCreateListView.as_view(), name='genre-create-list'),
     path('genres/<int:pk>/', GenreRetrieveUpdateDestroyView.as_view(), name='genre-detail-view'),
     
+   
     #### URLS de Actors
     path('actors/', ActorCreateView.as_view(), name='actor-create-list'),
     path('actors/<int:pk>/', ActorRetrieveUpdateDestroyView.as_view(), name='actor-detail-view'),
+    
     
     #### URLS de Movies
     path('movies/', MovieCreateListView.as_view(), name='movie-create-list'),

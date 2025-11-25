@@ -38,13 +38,13 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     
-    
+    ### Meus apps local
     'genres',
     'actors',
     'movies',
     'reviews',
     
-    
+    ### Django Rest Framework
     'rest_framework',
 
 ]
