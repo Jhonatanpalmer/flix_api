@@ -37,4 +37,9 @@ class MovieModelSerializer(serializers.ModelSerializer):
             raise serializers.ValidationError("O resumo deve ser maior que 200 caracteres.")
         return value
     
-    
+
+class MovieStatsSerializer(serializers.Serializer):
+    total_movies = serializers.IntegerField()
+    movies_by_genre = serializers.ListField()
+    total_reviews = serializers.IntegerField()
+    average_stars = serializers.FloatField()
