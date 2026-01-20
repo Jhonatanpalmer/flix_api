@@ -3,7 +3,7 @@ from rest_framework import generics
 from genres.models import Genre
 from genres.serializers import GenreSerializer
 from rest_framework.permissions import IsAuthenticated
-### importar o app permission que esta dentro do app principal 
+# importar o app permission que esta dentro do app principal 
 from app.permissions import GlobalDefaultPermission
 
 class GenreCreateListView(generics.ListCreateAPIView):

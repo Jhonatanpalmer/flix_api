@@ -3,7 +3,7 @@ from django.urls import path
 from . import views
 
 
-### Criar URL para listar e criar generos
+# Criar URL para listar e criar generos
 urlpatterns = [
     
     path('genres/', views.GenreCreateListView.as_view(), name='genre-create-list'),

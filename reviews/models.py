@@ -9,8 +9,8 @@ class Review(models.Model):
         related_name='reviews'
     )
     
-    #### Avaliação precisa ser de 0 a 5 estrelas ####
-    ### Utilizando validators para garantir isso ###
+    # Avaliação precisa ser de 0 a 5 estrelas ####
+    # Utilizando validators para garantir isso ###
     stars = models.IntegerField(
         validators=[
             MinValueValidator(0, 'Avaliação mínima é 0 estrelas.'),

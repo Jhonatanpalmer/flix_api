@@ -1,6 +1,6 @@
 from django.urls import path
 
-### JWT importar o token view
+# JWT importar o token view
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView , TokenVerifyView
 
 

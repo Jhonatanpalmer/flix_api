@@ -9,14 +9,14 @@ class GlobalDefaultPermission(permissions.BasePermission):
         
         )
         
-        ### aqui verifico se o usuario tem a permissao necessaria
+        # aqui verifico se o usuario tem a permissao necessaria
         if not model_permission_codename:
             return False
         return request.user.has_perm(model_permission_codename)
     
     
     def __get_model_permission_codename(self, method, view):
-        ### irei utilizar try para evitar erros inesperados 
+        # irei utilizar try para evitar erros inesperados 
         try:
             model_name = view.queryset.model._meta.model_name
             app_label = view.queryset.model._meta.app_label
