@@ -2,3 +2,13 @@ venv
 *.sqlite3
 __pycache__/
 actors.csv
+
+# python 
+__pycache__/
+*.pyc
+*.pyo
+*.pyd   
+
+# django
+*.sqlite3
+venv/
